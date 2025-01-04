@@ -64,3 +64,13 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
 - https://github.com/ryuichiueda/emcl2
 
 - © 2025 Hidetaka Umehara
+
+##参考資料
+
+- 「いちばんやさしいPython入門教室」著:大澤文孝 2019/8/10初版第６刷発行
+- [.bash_profileと.bashrcのまとめ](https://qiita.com/tockey/items/021b804b9957fe65e093)
+- [【ROS×Python】ROSタイマー(Timer)を実装しよう！](https://takilog.com/ros-python-timer-implement/)
+
+##ポモドーロ勉強法が気になる人はこちら
+
+-  [作業効率が上がるポモドーロ・テクニックとは？その効果や実践方法を紹介！](https://mynavi-job20s.jp/howto/pomodoro_technique)
