@@ -70,6 +70,7 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
 - 「いちばんやさしいPython入門教室」著:大澤文孝 2019/8/10初版第６刷発行
 - [.bash_profileと.bashrcのまとめ](https://qiita.com/tockey/items/021b804b9957fe65e093)
 - [【ROS×Python】ROSタイマー(Timer)を実装しよう！](https://takilog.com/ros-python-timer-implement/)
+- [Pythonで現在時刻・日付・日時を取得](https://note.nkmk.me/python-datetime-now-today/)
 
 ## ポモドーロ勉強法が気になる人はこちら
 
