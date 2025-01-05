@@ -54,8 +54,8 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
 * ROS2 Humble
 
 ## テスト環境
-- Ubuntu 22.04.5 LTS
-- Python 3.8.12
+- Ubuntu 22.04 LTS
+- Python 3.10.12
 - ROS2 Humble
 
 ## ライセンス
