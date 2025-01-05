@@ -1,14 +1,19 @@
 #!/bin/bash
 
+
 DIR=~
 [ "$1" != "" ] && DIR="$1" 
 
-cd $DIR/ros2_ws
-colcon build
-source $DIR/.bashrc
+cd $DIR/ros2_ws || { echo "ディレクトリ $DIR/ros2_ws が存在しません"; exit 1; }
+colcon build || { echo "ビルドに失敗しました"; exit 1; }
+source install/setup.bash
 
-timeout 10 python3 ros2_time_publisher.py > /tmp/ros2_time_publisher.log
+timeout 10 python3 src/ros2_time_publisher.py > /tmp/ros2_time_publisher.log || { echo "プログラムの実行に失敗しました"; exit 1; }
 
-# ログに特定の文字列が含まれているか確認
-cat /tmp/ros2_time_publisher.log |
-grep -E '現在時刻: .*?, 残り時間: [0-9]+分'
+
+if grep -E '現在時刻: .*?, 残り時間: [0-9]+分' /tmp/ros2_time_publisher.log; then
+    echo "テスト成功"
+else
+    echo "テスト失敗"
+    exit 1
+fi
