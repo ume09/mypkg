@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Hidetaka Umehara
+# SPDX-License-Identifier: BSD-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions
@@ -6,14 +9,9 @@ import launch_ros.actions
 
 def generate_launch_description():
 
-    talker = launch_ros.actions.Node(
+    study_timer = launch_ros.actions.Node(
         package='mypkg',
-        executable='talker',
-        )
-    listener = launch_ros.actions.Node(
-        package='mypkg',
-        executable='listener',
-        output='screen'
+        executable='study_timer',
         )
 
-    return launch.LaunchDescription([talker, listener])
+    return launch.LaunchDescription([study_timer])
