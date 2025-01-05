@@ -15,11 +15,11 @@
 以下の２つのコマンドを別々の端末で実行する
 
 ```
-ros2 run mypkg study_timer
+$ ros2 run mypkg study_timer
 ```
 
 ```
-ros2 topic echo /time_info
+$ ros2 topic echo /time_info
 ```
 
 ## 起動例
@@ -36,7 +36,7 @@ $ ros2 run mypkg study_timer
 端末2
 
 ```
-ros2 topic echo /time_info
+$ ros2 topic echo /time_info
 ```
 
 ```
