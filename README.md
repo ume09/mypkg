@@ -60,10 +60,10 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
 ## ライセンス
 - このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
 - このパッケージの一部のコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
-- https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024
-- https://github.com/ryuichiueda/emcl2
+ https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024
+ https://github.com/ryuichiueda/emcl2
 
-- © 2025 Hidetaka Umehara
+ © 2025 Hidetaka Umehara
 
 ## 参考資料
 
