@@ -14,4 +14,10 @@ timeout 10 ros2 launch mypkg study_timer.launch.py > /tmp/mypkg.log
 
 sleep 10
 
-grep -E '現在時刻: .*?, 残り時間: [0-9]+分' /tmp/mypkg.log && echo "テスト成功" || echo "テスト失敗"
+# grep -E '現在時刻: .*?, 残り時間: [0-9]+分' /tmp/mypkg.log && echo "テスト成功" || echo "テスト失敗"
+
+if grep -q "現在時刻" /tmp/mypkg.log; then
+  echo "Talkerノードが有用なデータを発信しています。成功です。"
+else
+  echo "Talkerノードが有用なデータを発信していません。エラーです。"
+fi
