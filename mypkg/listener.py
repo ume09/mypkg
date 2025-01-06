@@ -15,4 +15,3 @@ def cb(msg):
 def main():
   pub = node.create_subscription(Int16, "time_info", cb, 10)
   rclpy.spin(node)
-_info
