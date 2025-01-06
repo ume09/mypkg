@@ -25,7 +25,6 @@ setup(
         'console_scripts': [
             'study_timer = mypkg.study_timer:main',
             'listener = mypkg.listener:main',
-         
         ],
     },
     )

@@ -7,7 +7,7 @@ from std_msgs.msg import String
 from datetime import datetime, timedelta
 
 rclpy.init()
-node = Node("time_talker")
+node = Node("study_timer")
 
 pub = node.create_publisher(String, "time_info", 10)
 

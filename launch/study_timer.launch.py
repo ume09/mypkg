@@ -13,5 +13,10 @@ def generate_launch_description():
         package='mypkg',
         executable='study_timer',
         )
+    listener = launch_ros.actions.Node(
+        package='mypkg',
+        executable='listener',
+        output='screen'
+        )
 
-    return launch.LaunchDescription([study_timer])
+    return launch.LaunchDescription([study_timer,listener])
