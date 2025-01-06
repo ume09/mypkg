@@ -11,5 +11,5 @@ source $DIR/.bashrc
 
 timeout 10 ros2 pyson3 mypkg study_timer.py > /tmp/study_timer.log
 
-cat /tmp/ros2_time_publisher.log |
+cat /tmp/study_timer.log |
 grep -E '現在時刻: .*?, 残り時間: [0-9]+分' /tmp/study_timer.log && echo "テスト成功" || echo "テスト失敗"
