@@ -5,7 +5,7 @@
 DIR=~
 [ "$1" != "" ] && DIR="$1"
 
-cd $DIR/ros2_ws
+cd $dir/ros2_ws
 colcon build
 source $DIR/.bashrc
 
