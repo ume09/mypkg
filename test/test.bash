@@ -7,6 +7,8 @@ DIR=~
 
 cd $dir/ros2_ws
 colcon build
+source install/setup.bash
+source install/local_setup.bash
 source $dir/.bashrc
 
 timeout 10 ros2 pyson3 mypkg study_timer.py > /tmp/study_timer.log
