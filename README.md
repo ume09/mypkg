@@ -49,9 +49,11 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
 ```
 
 ## 必要なソフトウェア
-* Ubuntu 20.04.6 LTS 以上
-* Python 3.8.10 以上
-* ROS2 Humble
+- Ubuntu
+  - 確認済み 20.04 ,  22.04
+- Python
+  - 確認済み 3.8.10 , 3.10.12
+- ROS2 Humble
 
 ## テスト環境
 - Ubuntu 22.04 LTS
