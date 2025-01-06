@@ -8,6 +8,7 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
+ource /opt/ros/humble/setup.bash
 
 timeout 10 ros2 launch mypkg study_timer.launch.py > /tmp/mypkg.log
 
