@@ -3,21 +3,27 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import String
 
+class ListenerNode(Node):
+    def __init__(self):
+        super().__init__('listener')
+        self.subscription = self.create_subscription(
+            String,
+            'time_info', 
+            self.cb,  
+            10
+        )
+        self.get_logger().info('Listener node has been started.')
 
-rclpy.init()
-node = Node("listener")
-
-
-def cb(msg):
-    global node
-    node.get_logger().info("Listen: %d" % msg.data)
-
+    def cb(self, msg):
+    
+        self.get_logger().info(f"Received message: {msg.data}")
 
 def main():
-  pub = node.create_subscription(Int16, "time_info", cb, 10)
-  rclpy.spin(node)
+    rclpy.init()
+    node = ListenerNode()
+    rclpy.spin(node)
 
 if __name__ == '__main__':
     main()
