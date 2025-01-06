@@ -64,7 +64,7 @@ data: '現在時刻: 23:02:36, 残り時間: 5分'
   - https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024
   - https://github.com/ryuichiueda/emcl2
 
- © 2025 Hidetaka Umehara
+- © 2025 Hidetaka Umehara
 
 ## 参考資料
 
