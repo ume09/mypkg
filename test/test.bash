@@ -27,4 +27,3 @@ else
   echo "エラー"
   cat $LOG_FILE
 fi
-fi
