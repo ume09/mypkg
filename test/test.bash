@@ -11,5 +11,7 @@ source $dir/.bashrc
 
 timeout 10 ros2 launch mypkg study_timer.launch.py > /tmp/mypkg.log
 
+sleep 10
+
 cat /tmp/mypkg.log |
-grep -E '現在時刻:'
+grep -E '現在時刻: .*?, 残り時間: [0-9]+分' /tmp/study_timer.log && echo "テスト成功" || echo "テスト失敗"
