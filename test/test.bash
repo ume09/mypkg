@@ -10,7 +10,8 @@ colcon build
 source $dir/.bashrc
 ource /opt/ros/humble/setup.bash
 
-timeout 10 ros2 launch mypkg study_timer.launch.py > /tmp/mypkg.log
+timeout 10 ros2 run mypkg study_timer.py > /tmp/mypkg.log
+# timeout 10 ros2 launch mypkg study_timer.launch.py > /tmp/mypkg.log
 
 sleep 10
 
